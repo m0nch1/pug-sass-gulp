@@ -1,0 +1,33 @@
+.header {
+  padding: 10px;
+  max-height: 90px;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+
+  @include mobile {
+    max-height: 60px;
+    padding: 0;
+  }
+
+  &__logo {
+    @include tablet {
+      text-align: center;
+      width: 100%;
+    }
+    img {
+      width: 80%;
+      @include tablet {
+        width: 30%;
+      }
+      @include mobile {
+        padding-top: 10px;
+        width: 50%;
+      }
+    }
+  }
+}

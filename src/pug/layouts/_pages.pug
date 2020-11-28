@@ -1,0 +1,9 @@
+doctype html
+block vars
+html(lang="ja")
+	include ../components/_head.pug
+	body(class=key)#body
+		include ../components/_nav.pug
+		block contents
+		include ../components/_footer.pug
+		include ../components/_to_top.pug

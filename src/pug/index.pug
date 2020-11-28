@@ -1,0 +1,20 @@
+extends layouts/_home.pug
+
+block vars
+  include _config.pug
+  - var key = "home"
+  - var page = pages[key]
+
+block contents
+  .container
+
+    .hero
+      .hero__img
+      a(href="#").hero__scroll Scroll
+      .hero__sns
+        .hero__icon--twitter
+          img(src="../images/icon/twitter.svg" alt="twitter icon")
+        .hero__icon--instagram
+          img(src="../images/icon/instagram.svg" alt="instagram icon")
+        .hero__icon--facebook
+          img(src="../images/icon/facebook.svg" alt="facebook icon")

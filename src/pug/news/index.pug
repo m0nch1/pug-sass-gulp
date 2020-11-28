@@ -1,0 +1,14 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "news"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja お知らせ
+      .title__en News
+    .hero
+      .hero__image--news
